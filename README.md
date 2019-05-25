@@ -20,5 +20,5 @@ For running tests with coverage:
 Lint code:
 `npm run lint`
 
-# Docker
+## Docker
 `make docker-build`
