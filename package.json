@@ -14,6 +14,9 @@
     "test:coverage": "nyc npm test",
     "lint": "eslint --ignore-path .gitignore ."
   },
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
@@ -34,8 +37,5 @@
       "html",
       "text-summary"
     ]
-  },
-  "dependencies": {
-    "dotenv": "^8.0.0"
-  }
+  }  
 }
