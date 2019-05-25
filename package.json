@@ -1,0 +1,41 @@
+{
+  "name": "node-starter",
+  "version": "0.0.1",
+  "description": "A basic nodejs starter",
+  "author": "mihai.vaduva",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config src/index.js",
+    "test": "node_modules/.bin/mocha \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- -w --recursive",
+    "test:coverage": "nyc npm test",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.3.2"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "lines": 99,
+    "reporter": [
+      "html",
+      "text-summary"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  }
+}
